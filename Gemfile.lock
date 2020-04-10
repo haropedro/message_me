@@ -47,11 +47,14 @@ GEM
     archive-zip (0.12.0)
       io-like (~> 0.3.0)
     arel (9.0.0)
+    bcrypt (3.1.13)
     better_errors (2.6.0)
       coderay (>= 1.0.0)
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
     bindex (0.8.1)
+    binding_of_caller (0.7.3)
+      debug_inspector (>= 0.0.1)
     bootsnap (1.1.0)
       msgpack (~> 1.0)
     builder (3.2.4)
@@ -78,6 +81,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
+    debug_inspector (0.0.3)
     duktape (2.3.0.0)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
@@ -104,6 +108,7 @@ GEM
       guard (~> 2.8)
       guard-compat (~> 1.0)
       multi_json (~> 1.8)
+    hirb (0.7.3)
     http_parser.rb (0.6.0)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
@@ -231,7 +236,9 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   better_errors (~> 2.5, >= 2.5.1)
+  binding_of_caller (~> 0.7.2)
   bootsnap (= 1.1.0)
   byebug
   capybara (>= 2.15)
@@ -240,6 +247,7 @@ DEPENDENCIES
   duktape
   guard (~> 2.16, >= 2.16.1)
   guard-livereload (~> 2.5, >= 2.5.2)
+  hirb
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3, >= 4.3.3)
   puma (~> 3.11)
